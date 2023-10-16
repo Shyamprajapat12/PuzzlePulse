@@ -10,56 +10,63 @@ let quiz;
 function initApp() {
     const questions = [
         {
-            title: "Which one is the type of a javascript file?",
-            options: [".ts", ".js", ".jsx", ".j"]
+            id : 0,
+            title: "What is the next number in the sequence: 2, 4, 8, 16, __",
+            options: ["20", "24", "32", "64"]
         }, {
-            title: "Inside which HTML element do we put the JavaScript?",
-            options: ["<scripting>", "<script>", "<js>", "<javascript>"]
+            id : 1,
+            title: "Which planet is known as the Red Planet",
+            options: ["Mars", "Earth", "Venus", "Mercury"]
         }, {
-            title: "Where is the correct place to insert a JavaScript?",
+            id : 2,
+            title: "Which of the following is a prime number?",
             options: [
-                "The <head> section",
-                "Both the <head> section and the <body> section are correct",
-                "The <body> section",
-                "Anywhere in the HTML document"]
+                "1",
+                "4",
+                "7",
+                "21"]
         }, {
-            title: "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+            id : 3,
+            title: "If you rearrange the letters NLOODN, you get the name of which country?",
             options: [
-                '<script name="xxx.js">',
-                '<script src="xxx.js">',
-                '<script link="xxx.js">',
-                '<script href="xxx.js">'
+                'INDIA',
+                'COLOMBO',
+                'LONDON',
+                'ICELAND'
             ]
         }, {
-            title: 'How do you write "Hello World" in an alert box?',
+            id : 4,
+            title: 'What is the square root of 144?',
             options: [
-                'msg("Hello World");',
-                'alert("Hello World");',
-                'msgBox("Hello World");',
-                'console.log("Hello World");',
+                '12',
+                '13',
+                '8',
+                '14',
             ]
         }, {
-            title: 'How do you create a normal function in JavaScript?',
+            id : 5,
+            title: 'How many sides does a heptagon have?',
             options: [
-                'function:myFunction()',
-                'function myFunction()',
-                'function* myFunction()',
-                'function = myFunction()',
+                '5',
+                '6',
+                '7',
+                '8',
             ]
         }, {
-            title: 'How do you call a function named "myFunction"?',
+            id : 6,
+            title: 'Who is famous for painting the Mona Lisa?',
             options: [
-                'call myFunction()',
-                'myFunction()',
-                'call:myFunction()',
-                'alo myFunction()',
+                'Leonardo da Vinci',
+                'Vincent van Gogh',
+                'Pablo Picasso',
+                'Michelangelo',
             ]
         },
     ];
 
     quiz = new Quiz(
-        "Quizzler",
-        `Quizzler is a fun new way to practice, improve, and test your Javascript skills.`,
+        "Puzzle Pulse",
+        `Puzzle Pulse is a fun new way to practice, improve, and test your Javascript skills.`,
         70,
         questions);
 

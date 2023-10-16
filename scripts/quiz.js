@@ -272,7 +272,14 @@ function checkAnswerValidity(questionID, option) {
     // Every checking could be apply here but
     // the correct answer is the second option in
     // my questions because of its simplicity
-    return +option === 1;
+    if(questionID==0&&option==2)return 1;
+    if(questionID==1&&option==0)return 1;
+    if(questionID==2&&option==2)return 1;
+    if(questionID==3&&option==2)return 1;
+    if(questionID==4&&option==0)return 1;
+    if(questionID==5&&option==2)return 1;
+    if(questionID==6&&option==0)return 1;
+    return 0;
 }
 
 // Convert number (in second) to time-string
